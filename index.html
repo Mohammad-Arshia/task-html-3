@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>کارگاه عکاسی</title>
+  </head>
+  <body id="top">
+    <!-- هدر -->
+    <header>
+      <h1>کارگاه عکاسی</h1>
+      <!-- منوی ناوبری یا همون لینک ها  -->
+      <nav>
+        <a href="#intro">معرفی</a> | 
+        <a href="#agenda">برنامه</a> |
+        <a href="#register">ثبت‌نام</a>
+      </nav>
+    </header>
+    <!-- بدنه اصلی صفحه -->
+    <main>
+        <!-- تصویر معرفی -->
+      <section id="intro">
+        <p>یک روز برای یادگیری عکاسی با موبایل</p>
+        <figure>
+          <picture>
+            <source media="(max-width: 767px)" srcset="assets/mobile.png" />
+            <source media="(max-width: 1023px)" srcset="assets/tablet.png" />
+            <source media="(min-width: 1024px)" srcset="assets/desktop.png" />
+            <img
+              src="assets/desktop.png"
+              alt="دوربین عکاسی"
+              width="100%"
+            />
+          </picture>
+          <figcaption>تمرین دیدن جزئیات</figcaption>
+        </figure>
+      </section>
+
+      <hr />
+      <!-- بخش لیست ها -->
+      <section id="topics">
+        <h2>چه چیزهایی یاد می‌گیریم؟</h2>
+        <ul>
+          <li>نور و سایه</li>
+          <li>کادربندی</li>
+          <li>عکاسی از طبیعت</li>
+        </ul>
+      </section>
+
+      <section id="requirements">
+        <h2>وسایل موردنیاز</h2>
+        <ol>
+          <li>موبایل یا دوربین</li>
+          <li>دفترچه یادداشت</li>
+        </ol>
+      </section>
+      <!-- جدول برنامه -->
+      <section id="agenda">
+        <h2>برنامه کارگاه</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>ساعت</th>
+              <th>موضوع</th>
+              <th>مدرس</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>۹:۰۰</td>
+              <td>نورپردازی</td>
+              <td>سارا احمدی</td>
+            </tr>
+            <tr>
+              <td>۱۰:۰۰</td>
+              <td>تمرین عملی</td>
+              <td>علی رضایی</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <!--  (استاد اینجا چون صفحه مقصدی نداریم که فرم ارسال بشه بهش متود رو روی همین پست میذارم ولی اکشن رو خالی میذارم)ثبت نام -->
+      <section id="register">
+        <h2>ثبت‌نام</h2>
+        <form action="" method="post">
+          <label for="full-name">نام و نام خانوادگی</label>
+          <input type="text" id="full-name" name="full-name" />
+          <br /><br />
+          <label for="email">ایمیل</label>
+          <input type="email" id="email" name="email" />
+          <br /><br>
+          <label for="level">سطح آشنایی</label>
+          <select id="level" name="level">
+            <option value="beginner">مبتدی</option>
+            <option value="intermediate">متوسط</option>
+            <option value="advanced">پیشرفته</option>
+          </select>
+          <br><br>
+          <input type="checkbox" id="attend" name="attend" />
+          <label for="attend">در کارگاه شرکت می‌کنم</label>
+          <br><br>
+          <button type="submit">ارسال</button>
+        </form>
+      </section>
+    </main>
+
+    <hr />
+    <!-- فوتر -->
+    <footer>
+      <a href="#top">بازگشت به بالا</a>
+    </footer>
+  </body>
+</html>
